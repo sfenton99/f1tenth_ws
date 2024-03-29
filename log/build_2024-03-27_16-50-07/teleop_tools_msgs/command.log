@@ -1,0 +1,1 @@
+Invoking command in '/home/super/f1tenth_ws/build/teleop_tools_msgs': /usr/bin/cmake /home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/teleop_tools_msgs

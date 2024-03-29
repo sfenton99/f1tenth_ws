@@ -1,0 +1,12 @@
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:213:72:[m[K [01;35m[Kwarning: [m[K‘[01m[Knav_msgs::msg::Odometry_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  213 |     void pose_callback(const nav_msgs::msg::Odometry::ConstPtr pose_msg[01;35m[K)[m[K
+      |                                                                        [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/foxy/include/nav_msgs/msg/odometry.hpp:7[m[K,
+                 from [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:10[m[K:
+[01m[K/opt/ros/foxy/include/nav_msgs/msg/detail/odometry__struct.hpp:145:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  145 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(nav_msgs::msg::Odometry_<std::allocator<void> >::ConstPtr)[m[K’:
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:226:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdx_trans[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  226 |         double [01;35m[Kdx_trans[m[K = dx*cos(yaw) + dy*sin(yaw);
+      |                [01;35m[K^~~~~~~~[m[K

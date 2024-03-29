@@ -1,0 +1,46 @@
+[0.039s] Invoking command in '/home/super/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/super/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[0.190s] [35m[1mScanning dependencies of target pure_pursuit_node[0m
+[0.398s] [ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[4.026s] [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:216:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.026s]   216 | gs::msg::PoseStamped::ConstPtr pose_msg[01;35m[K)[m[K
+[4.026s]       |                                        [01;35m[K^[m[K
+[4.027s] 
+[4.027s] In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+[4.027s]                  from [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:12[m[K:
+[4.027s] [01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:114:5:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.028s]   114 |     [01;36m[KConstPtr[m[K;
+[4.028s]       |     [01;36m[K^~~~~~~~[m[K
+[4.147s] [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr)[m[K’:
+[4.147s] [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:229:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdx_trans[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[4.148s]   229 |         double [01;35m[Kdx_trans[m[K = dx*cos(yaw) + dy*sin(yaw);
+[4.148s]       |                [01;35m[K^~~~~~~~[m[K
+[15.603s] [100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[16.583s] [100%] Built target pure_pursuit_node
+[16.761s] Invoked command in '/home/super/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/super/f1tenth_ws/build/pure_pursuit -- -j6 -l6
+[16.884s] Invoking command in '/home/super/f1tenth_ws/build/pure_pursuit': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/super/f1tenth_ws/build/pure_pursuit
+[16.914s] -- Install configuration: ""
+[16.914s] -- Installing: /home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+[16.940s] -- Set runtime path of "/home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node" to ""
+[16.941s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh
+[16.941s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv
+[16.942s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit
+[16.943s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py
+[17.086s] Listing '/home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...
+[17.110s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py
+[17.111s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py
+[17.111s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+[17.112s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+[17.112s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+[17.113s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+[17.113s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+[17.113s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+[17.113s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+[17.117s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+[17.118s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+[17.118s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+[17.118s] -- Installing: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+[17.118s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+[17.118s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+[17.118s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+[17.123s] -- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml
+[17.142s] Invoked command in '/home/super/f1tenth_ws/build/pure_pursuit' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --install /home/super/f1tenth_ws/build/pure_pursuit

@@ -1,0 +1,17 @@
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:219:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  219 | gs::msg::PoseStamped::ConstPtr pose_msg[01;35m[K)[m[K
+      |                                        [01;35m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+                 from [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:12[m[K:
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:114:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  114 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kstd::vector<double, std::allocator<double> > PurePursuit::select_goal(geometry_msgs::msg::Pose)[m[K’:
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:146:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kclosest_index[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  146 |         size_t [01;35m[Kclosest_index[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr)[m[K’:
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:232:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdx_trans[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  232 |         double [01;35m[Kdx_trans[m[K = dx*cos(yaw) + dy*sin(yaw);
+      |                [01;35m[K^~~~~~~~[m[K

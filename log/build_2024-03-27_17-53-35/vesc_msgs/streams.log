@@ -1,0 +1,15 @@
+[0.194s] Invoking command in '/home/super/f1tenth_ws/build/vesc_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy /usr/bin/cmake --build /home/super/f1tenth_ws/build/vesc_msgs -- -j6 -l6
+[0.942s] [  1%] Built target vesc_msgs__cpp
+[0.943s] [ 12%] Built target vesc_msgs__rosidl_generator_c
+[0.945s] [ 23%] Built target vesc_msgs__rosidl_typesupport_cpp
+[0.945s] [ 34%] Built target vesc_msgs__rosidl_typesupport_c
+[0.945s] [ 56%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp
+[0.945s] [ 67%] Built target vesc_msgs__rosidl_typesupport_introspection_c
+[0.945s] [ 67%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp
+[0.946s] [ 78%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c
+[0.995s] [ 78%] Built target vesc_msgs
+[1.052s] [ 80%] Built target vesc_msgs__py
+[1.118s] [ 89%] Built target vesc_msgs__python
+[1.187s] [ 92%] Built target vesc_msgs__rosidl_typesupport_c__pyext
+[1.194s] [100%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.194s] [100%] Built target vesc_msgs__rosidl_typesupport_introspection_c__pyext

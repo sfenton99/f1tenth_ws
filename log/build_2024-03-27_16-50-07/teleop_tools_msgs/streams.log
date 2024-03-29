@@ -1,0 +1,34 @@
+[0.589s] Invoking command in '/home/super/f1tenth_ws/build/teleop_tools_msgs': /usr/bin/cmake /home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs -DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/teleop_tools_msgs
+[1.366s] -- The C compiler identification is GNU 9.4.0
+[2.112s] -- The CXX compiler identification is GNU 9.4.0
+[2.131s] -- Check for working C compiler: /usr/bin/cc
+[2.587s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.722s] -- Detecting C compiler ABI info
+[3.018s] -- Detecting C compiler ABI info - done
+[3.212s] -- Detecting C compile features
+[3.217s] -- Detecting C compile features - done
+[3.222s] -- Check for working CXX compiler: /usr/bin/c++
+[3.534s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.535s] -- Detecting CXX compiler ABI info
+[3.875s] -- Detecting CXX compiler ABI info - done
+[3.891s] -- Detecting CXX compile features
+[3.893s] -- Detecting CXX compile features - done
+[4.055s] CMake Error at CMakeLists.txt:18 (find_package):
+[4.055s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[4.055s]   has asked CMake to find a package configuration file provided by
+[4.056s]   "ament_cmake", but CMake did not find one.
+[4.056s] 
+[4.056s]   Could not find a package configuration file provided by "ament_cmake" with
+[4.056s]   any of the following names:
+[4.056s] 
+[4.056s]     ament_cmakeConfig.cmake
+[4.056s]     ament_cmake-config.cmake
+[4.056s] 
+[4.057s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[4.057s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[4.057s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[4.057s]   has been installed.
+[4.057s] 
+[4.057s] 
+[4.057s] -- Configuring incomplete, errors occurred!
+[4.057s] See also "/home/super/f1tenth_ws/build/teleop_tools_msgs/CMakeFiles/CMakeOutput.log".

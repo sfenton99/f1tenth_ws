@@ -47,13 +47,14 @@ install(TARGETS
   pure_pursuit_node
   DESTINATION lib/${PROJECT_NAME})
 
-# Install Python modules
+# Install Python modulesT
 ament_python_install_package(${PROJECT_NAME})
 
 # Install Python executables
 install(PROGRAMS
   scripts/pure_pursuit_node.py
   scripts/waypoint_logger.py
+  scripts/click_logger.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

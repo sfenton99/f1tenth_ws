@@ -1,0 +1,21 @@
+[4.049s] Invoking command in '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop': PYTHONPATH=/home/super/f1tenth_ws/build/mouse_teleop/prefix_override:/home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/mouse_teleop build --build-base /home/super/f1tenth_ws/build/mouse_teleop/build install --record /home/super/f1tenth_ws/build/mouse_teleop/install.log --install-scripts $base/lib/mouse_teleop --single-version-externally-managed install_data
+[4.700s] running egg_info
+[4.701s] writing ../../../../build/mouse_teleop/mouse_teleop.egg-info/PKG-INFO
+[4.706s] writing dependency_links to ../../../../build/mouse_teleop/mouse_teleop.egg-info/dependency_links.txt
+[4.708s] writing entry points to ../../../../build/mouse_teleop/mouse_teleop.egg-info/entry_points.txt
+[4.708s] writing requirements to ../../../../build/mouse_teleop/mouse_teleop.egg-info/requires.txt
+[4.708s] writing top-level names to ../../../../build/mouse_teleop/mouse_teleop.egg-info/top_level.txt
+[4.926s] reading manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'
+[5.030s] writing manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'
+[5.035s] running build
+[5.036s] running build_py
+[5.036s] running install
+[5.036s] running install_lib
+[5.037s] running install_data
+[5.038s] running install_egg_info
+[5.051s] removing '/home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop-0.3.0-py3.8.egg-info' (and everything under it)
+[5.054s] Copying ../../../../build/mouse_teleop/mouse_teleop.egg-info to /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop-0.3.0-py3.8.egg-info
+[5.062s] running install_scripts
+[5.138s] Installing mouse_teleop script to /home/super/f1tenth_ws/install/mouse_teleop/lib/mouse_teleop
+[5.139s] writing list of installed files to '/home/super/f1tenth_ws/build/mouse_teleop/install.log'
+[5.238s] Invoked command in '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop' returned '0': PYTHONPATH=/home/super/f1tenth_ws/build/mouse_teleop/prefix_override:/home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/mouse_teleop build --build-base /home/super/f1tenth_ws/build/mouse_teleop/build install --record /home/super/f1tenth_ws/build/mouse_teleop/install.log --install-scripts $base/lib/mouse_teleop --single-version-externally-managed install_data

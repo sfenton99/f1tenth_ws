@@ -1,0 +1,35 @@
+[0.750s] Invoking command in '/home/super/f1tenth_ws/build/ackermann_mux': /usr/bin/cmake /home/super/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/ackermann_mux
+[1.354s] -- The C compiler identification is GNU 9.4.0
+[2.099s] -- The CXX compiler identification is GNU 9.4.0
+[2.119s] -- Check for working C compiler: /usr/bin/cc
+[2.577s] -- Check for working C compiler: /usr/bin/cc -- works
+[2.710s] -- Detecting C compiler ABI info
+[3.044s] -- Detecting C compiler ABI info - done
+[3.199s] -- Detecting C compile features
+[3.201s] -- Detecting C compile features - done
+[3.216s] -- Check for working CXX compiler: /usr/bin/c++
+[3.526s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.529s] -- Detecting CXX compiler ABI info
+[3.863s] -- Detecting CXX compiler ABI info - done
+[3.882s] -- Detecting CXX compile features
+[3.883s] -- Detecting CXX compile features - done
+[3.903s] CMake Error at CMakeLists.txt:13 (find_package):
+[3.904s]   By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project
+[3.904s]   has asked CMake to find a package configuration file provided by
+[3.904s]   "ament_cmake", but CMake did not find one.
+[3.905s] 
+[3.905s]   Could not find a package configuration file provided by "ament_cmake" with
+[3.905s]   any of the following names:
+[3.905s] 
+[3.905s]     ament_cmakeConfig.cmake
+[3.905s]     ament_cmake-config.cmake
+[3.906s] 
+[3.906s]   Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set
+[3.906s]   "ament_cmake_DIR" to a directory containing one of the above files.  If
+[3.906s]   "ament_cmake" provides a separate development package or SDK, be sure it
+[3.906s]   has been installed.
+[3.906s] 
+[3.906s] 
+[3.906s] -- Configuring incomplete, errors occurred!
+[3.907s] See also "/home/super/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeOutput.log".
+[3.913s] Invoked command in '/home/super/f1tenth_ws/build/ackermann_mux' returned '1': /usr/bin/cmake /home/super/f1tenth_ws/src/f1tenth_system/ackermann_mux -DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/ackermann_mux

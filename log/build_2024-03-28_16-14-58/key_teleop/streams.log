@@ -1,0 +1,21 @@
+[4.501s] Invoking command in '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop': PYTHONPATH=/home/super/f1tenth_ws/build/key_teleop/prefix_override:/home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /home/super/f1tenth_ws/build/key_teleop/build install --record /home/super/f1tenth_ws/build/key_teleop/install.log --install-scripts $base/lib/key_teleop --single-version-externally-managed install_data
+[5.116s] running egg_info
+[5.119s] writing ../../../../build/key_teleop/key_teleop.egg-info/PKG-INFO
+[5.121s] writing dependency_links to ../../../../build/key_teleop/key_teleop.egg-info/dependency_links.txt
+[5.122s] writing entry points to ../../../../build/key_teleop/key_teleop.egg-info/entry_points.txt
+[5.122s] writing requirements to ../../../../build/key_teleop/key_teleop.egg-info/requires.txt
+[5.122s] writing top-level names to ../../../../build/key_teleop/key_teleop.egg-info/top_level.txt
+[5.399s] reading manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[5.555s] writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'
+[5.555s] running build
+[5.556s] running build_py
+[5.556s] running install
+[5.568s] running install_lib
+[5.573s] running install_data
+[5.585s] running install_egg_info
+[5.586s] removing '/home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info' (and everything under it)
+[5.586s] Copying ../../../../build/key_teleop/key_teleop.egg-info to /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info
+[5.734s] running install_scripts
+[5.789s] Installing key_teleop script to /home/super/f1tenth_ws/install/key_teleop/lib/key_teleop
+[5.790s] writing list of installed files to '/home/super/f1tenth_ws/build/key_teleop/install.log'
+[5.857s] Invoked command in '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop' returned '0': PYTHONPATH=/home/super/f1tenth_ws/build/key_teleop/prefix_override:/home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/key_teleop build --build-base /home/super/f1tenth_ws/build/key_teleop/build install --record /home/super/f1tenth_ws/build/key_teleop/install.log --install-scripts $base/lib/key_teleop --single-version-externally-managed install_data

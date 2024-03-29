@@ -31,24 +31,42 @@ public:
     {
        //constructor
        // load in data (path to track)
-       std::string filePath = "/sim_ws/src/pure_pursuit/data/robot_log.csv";
+       std::string filePath = "/home/super/f1tenth_ws/waypoints.csv";
        loadLogData(filePath);
        
        // Topics
         std::string lidarscan_topic = "/scan";
         std::string drive_topic = "/drive";
-        std::string odometry_topic = "/ego_racecar/odom";
+        // std::string odometry_topic = "/ego_racecar/odom";
+        std::string pose_topic = "/pf/viz/inferred_pose";
 
         // ROS subscribers and publishers
         drivepub = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>(drive_topic, 10);
 
         std::cout << "--- Now Let's Make it Perty.... :) " << std::endl;
-        viz_timer_ = this->create_wall_timer(10s, std::bind(&PurePursuit::drawLogData, this));
+        viz_timer_ = this->create_wall_timer(2s, std::bind(&PurePursuit::drawLogData, this));
 
         markerpub = this->create_publisher<visualization_msgs::msg::Marker>("/visualize_goal",10);
         pathpub = this->create_publisher<visualization_msgs::msg::MarkerArray>("/visualize_path",10);
         // lasersub = this->create_subscription<sensor_msgs::msg::LaserScan>(lidarscan_topic, 10, std::bind(&ReactiveFollowGap::scan_callback, this, _1));
-        odomsub = this->create_subscription<nav_msgs::msg::Odometry>(odometry_topic, 10, std::bind(&PurePursuit::pose_callback, this, _1));
+        // odomsub = this->create_subscription<nav_msgs::msg::Odometry>(odometry_topic, 10, std::bind(&PurePursuit::pose_callback, this, _1));
+        pose_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(pose_topic, 10, std::bind(&PurePursuit::pose_callback, this, _1));
+
+        // declare tunable parameters
+        this->declare_parameter<double>("L", 1.5); //lookahead distance
+        this->declare_parameter<double>("p_gain", 0.3);
+        this->declare_parameter<double>("speed_scale", 1.0);
+        this->declare_parameter<double>("max_steer", 3.14/2);
+        this->declare_parameter<double>("min_steer", -3.14/2);
+        this->declare_parameter<int>("step_size", 10); //step size for waypoint selection
+
+        // get parameters
+        L = this->get_parameter("L").get_value<double>();
+        PGain = this->get_parameter("p_gain").get_value<double>();
+        speed_scale = this->get_parameter("speed_scale").get_value<double>();
+        max_steer = this->get_parameter("max_steer").get_value<double>();
+        min_steer = this->get_parameter("min_steer").get_value<double>();
+        step_size = this->get_parameter("step_size").get_value<int>();
     
     }
     
@@ -56,12 +74,18 @@ public:
 private:
 
     //TUNABLE PARAMETERS
-    double L = 1.5; //lookahead distance
-    double PGain = 0.3;
-    double velocity = 2;
-    int step_size = 10; //step size for waypoint selection
-    double max_steer = 3.14/2;
-    double min_steer = -3.14/2;
+    // double L = 1.5; //lookahead distance
+    // double PGain = 0.3;
+    // double velocity = 1;
+    // int step_size = 10; //step size for waypoint selection
+    // double max_steer = 3.14/2;
+    // double min_steer = -3.14/2;
+    double L;
+    double PGain;
+    double speed_scale;
+    double max_steer;
+    double min_steer;
+    int step_size;
 
     //trajectory being followed
     std::vector<double> x_traj;
@@ -72,7 +96,8 @@ private:
     rclcpp::TimerBase::SharedPtr viz_timer_;
     rclcpp::Publisher<visualization_msgs::msg::Marker>::SharedPtr markerpub;
     rclcpp::Publisher<visualization_msgs::msg::MarkerArray>::SharedPtr pathpub;
-    rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odomsub;
+    // rclcpp::Subscription<nav_msgs::msg::Odometry>::SharedPtr odomsub;
+    rclcpp::Subscription<geometry_msgs::msg::PoseStamped>::SharedPtr pose_sub_;
     visualization_msgs::msg::Marker select_waypoint = visualization_msgs::msg::Marker();
     visualization_msgs::msg::MarkerArray path = visualization_msgs::msg::MarkerArray();
 
@@ -125,9 +150,9 @@ private:
             path_point.pose.orientation.y = 0.0;
             path_point.pose.orientation.z = 0.0;
             path_point.pose.orientation.w = 1.0;
-            path_point.scale.x = 0.05;
-            path_point.scale.y = 0.05;
-            path_point.scale.z = 0.05;
+            path_point.scale.x = 0.1;
+            path_point.scale.y = 0.1;
+            path_point.scale.z = 0.1;
             path_point.color.a = 1.0;
             path_point.color.r = 0.0;
             path_point.color.g = 0.0;
@@ -161,6 +186,9 @@ private:
             if (dist > L) {
                 goal_index = int(i);
                 break;
+            }
+            if (i == (x_traj.size() - 1)){
+                i = 0;
             }
         }
 
@@ -210,10 +238,25 @@ private:
     return yaw;
     }
 
-    void pose_callback(const nav_msgs::msg::Odometry::ConstPtr pose_msg)
+    double set_velocity(const double angle)
+    {
+        double velocity;
+        if (angle < 10*M_PI/180){
+            velocity = speed_scale * 1.5;
+        }
+        else if (angle < 20*M_PI/180){
+            velocity = speed_scale * 1.0;
+        }
+        else{
+            velocity = speed_scale * 0.5;
+        }
+        return velocity;
+    }
+
+    void pose_callback(const geometry_msgs::msg::PoseStamped::ConstPtr pose_msg)
     {
         // TODO: find the current waypoint to track using methods mentioned in lecture
-        auto pose = pose_msg->pose.pose;
+        auto pose = pose_msg->pose;
         std::vector<double> goal;
         goal = select_goal(pose);
 
@@ -233,6 +276,7 @@ private:
 
         // TODO: publish drive message, don't forget to limit the steering angle.
         auto drive_msg = ackermann_msgs::msg::AckermannDriveStamped();
+        auto velocity = set_velocity(steer);
         drive_msg.drive.speed = velocity;
         drive_msg.drive.steering_angle = steer;
 

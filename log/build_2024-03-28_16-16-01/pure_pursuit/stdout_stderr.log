@@ -1,0 +1,42 @@
+[35m[1mScanning dependencies of target pure_pursuit_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o[0m
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:256:80:[m[K [01;35m[Kwarning: [m[K‘[01m[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr[m[K’ is deprecated [[01;35m[K-Wdeprecated-declarations[m[K]
+  256 | gs::msg::PoseStamped::ConstPtr pose_msg[01;35m[K)[m[K
+      |                                        [01;35m[K^[m[K
+
+In file included from [01m[K/opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7[m[K,
+                 from [01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:12[m[K:
+[01m[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:114:5:[m[K [01;36m[Knote: [m[Kdeclared here
+  114 |     [01;36m[KConstPtr[m[K;
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:[m[K In member function ‘[01m[Kvoid PurePursuit::pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr)[m[K’:
+[01m[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:269:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdx_trans[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  269 |         double [01;35m[Kdx_trans[m[K = dx*cos(yaw) + dy*sin(yaw);
+      |                [01;35m[K^~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable pure_pursuit_node[0m
+[100%] Built target pure_pursuit_node
+-- Install configuration: ""
+-- Installing: /home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node
+-- Set runtime path of "/home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node" to ""
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.sh
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/pythonpath.dsv
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit/__init__.py
+Listing '/home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages/pure_pursuit'...
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/pure_pursuit_node.py
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/lib/pure_pursuit/waypoint_logger.py
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/package_run_dependencies/pure_pursuit
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/parent_prefix_path/pure_pursuit
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.sh
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.sh
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/environment/path.dsv
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.bash
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.sh
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.zsh
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/local_setup.dsv
+-- Installing: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.dsv
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/ament_index/resource_index/packages/pure_pursuit
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig.cmake
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/cmake/pure_pursuitConfig-version.cmake
+-- Up-to-date: /home/super/f1tenth_ws/install/pure_pursuit/share/pure_pursuit/package.xml

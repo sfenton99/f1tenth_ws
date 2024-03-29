@@ -1,0 +1,130 @@
+[0.000000] (-) TimerEvent: {}
+[0.000744] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.012467] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.012600] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.012667] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.012720] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.012928] (-) JobUnselected: {'identifier': 'particle_filter'}
+[0.012981] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.013287] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.013337] (-) JobUnselected: {'identifier': 'vesc'}
+[0.013381] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.013423] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.013467] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.013523] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.013586] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.041897] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.044088] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'build'}
+[0.049132] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/super/f1tenth_ws/build/pure_pursuit', '--', '-j6', '-l6'], 'cwd': '/home/super/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'super'), ('SSH_AGENT_PID', '4597'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/super/f1tenth_ws/install/vesc_driver/lib:/home/super/f1tenth_ws/install/vesc_ackermann/lib:/home/super/f1tenth_ws/install/vesc_msgs/lib:/home/super/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/super'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3215'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6350'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/super/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'super'), ('JOURNAL_STREAM', '8:65460'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'super'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/super-desktop:@/tmp/.ICE-unix/4635,unix/super-desktop:/tmp/.ICE-unix/4635'), ('INVOCATION_ID', '4941b09657ec443dadd2ae7debafcddb'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/vesc:/home/super/f1tenth_ws/install/vesc_driver:/home/super/f1tenth_ws/install/vesc_ackermann:/home/super/f1tenth_ws/install/vesc_msgs:/home/super/f1tenth_ws/install/teleop_tools:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/teleop_tools_msgs:/home/super/f1tenth_ws/install/pure_pursuit:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/home/super/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3b436441-aa99-41c4-8897-d83fa6a5d653'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/super/f1tenth_ws/build/pure_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/super/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/super/f1tenth_ws/install/vesc:/home/super/f1tenth_ws/install/vesc_driver:/home/super/f1tenth_ws/install/vesc_ackermann:/home/super/f1tenth_ws/install/vesc_msgs:/home/super/f1tenth_ws/install/teleop_tools:/home/super/f1tenth_ws/install/teleop_tools_msgs:/home/super/f1tenth_ws/install/pure_pursuit:/home/super/f1tenth_ws/install/ackermann_mux:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.098978] (-) TimerEvent: {}
+[0.188115] (pure_pursuit) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pure_pursuit_node\x1b[0m\n'}
+[0.199123] (-) TimerEvent: {}
+[0.263505] (pure_pursuit) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o\x1b[0m\n'}
+[0.299279] (-) TimerEvent: {}
+[0.400016] (-) TimerEvent: {}
+[0.500889] (-) TimerEvent: {}
+[0.601649] (-) TimerEvent: {}
+[0.704461] (-) TimerEvent: {}
+[0.805232] (-) TimerEvent: {}
+[0.906900] (-) TimerEvent: {}
+[1.008349] (-) TimerEvent: {}
+[1.110522] (-) TimerEvent: {}
+[1.211362] (-) TimerEvent: {}
+[1.312117] (-) TimerEvent: {}
+[1.413362] (-) TimerEvent: {}
+[1.514249] (-) TimerEvent: {}
+[1.615004] (-) TimerEvent: {}
+[1.716125] (-) TimerEvent: {}
+[1.816880] (-) TimerEvent: {}
+[1.917549] (-) TimerEvent: {}
+[2.018203] (-) TimerEvent: {}
+[2.118866] (-) TimerEvent: {}
+[2.219496] (-) TimerEvent: {}
+[2.320170] (-) TimerEvent: {}
+[2.420858] (-) TimerEvent: {}
+[2.521511] (-) TimerEvent: {}
+[2.622171] (-) TimerEvent: {}
+[2.722812] (-) TimerEvent: {}
+[2.823469] (-) TimerEvent: {}
+[2.924314] (-) TimerEvent: {}
+[3.024966] (-) TimerEvent: {}
+[3.125629] (-) TimerEvent: {}
+[3.226328] (-) TimerEvent: {}
+[3.327006] (-) TimerEvent: {}
+[3.427662] (-) TimerEvent: {}
+[3.528382] (-) TimerEvent: {}
+[3.629186] (-) TimerEvent: {}
+[3.730343] (-) TimerEvent: {}
+[3.793569] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:216:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[3.794183] (pure_pursuit) StderrLine: {'line': b'  216 | gs::msg::PoseStamped::ConstPtr pose_msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[3.794375] (pure_pursuit) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.794535] (pure_pursuit) StderrLine: {'line': b'\n'}
+[3.794683] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[3.794832] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:12\x1b[m\x1b[K:\n'}
+[3.794987] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:114:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[3.795139] (pure_pursuit) StderrLine: {'line': b'  114 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[3.795281] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.798469] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KPurePursuit::PurePursuit()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.798892] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:44:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kdrivepub\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.799064] (pure_pursuit) StderrLine: {'line': b'   44 |         \x1b[01;31m\x1b[Kdrivepub\x1b[m\x1b[K = this->create_publisher<ackermann_msgs::msg::AckermannDriveStamped>(drive_topic, 10);\n'}
+[3.799218] (pure_pursuit) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.830601] (-) TimerEvent: {}
+[3.920292] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.920821] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:229:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdx_trans\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[3.920999] (pure_pursuit) StderrLine: {'line': b'  229 |         double \x1b[01;35m\x1b[Kdx_trans\x1b[m\x1b[K = dx*cos(yaw) + dy*sin(yaw);\n'}
+[3.921154] (pure_pursuit) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.931185] (-) TimerEvent: {}
+[4.031914] (-) TimerEvent: {}
+[4.132599] (-) TimerEvent: {}
+[4.235084] (-) TimerEvent: {}
+[4.335841] (-) TimerEvent: {}
+[4.437326] (-) TimerEvent: {}
+[4.540745] (-) TimerEvent: {}
+[4.641566] (-) TimerEvent: {}
+[4.742630] (-) TimerEvent: {}
+[4.845375] (-) TimerEvent: {}
+[4.946078] (-) TimerEvent: {}
+[5.046763] (-) TimerEvent: {}
+[5.147548] (-) TimerEvent: {}
+[5.250406] (-) TimerEvent: {}
+[5.351487] (-) TimerEvent: {}
+[5.452127] (-) TimerEvent: {}
+[5.553462] (-) TimerEvent: {}
+[5.654173] (-) TimerEvent: {}
+[5.875711] (-) TimerEvent: {}
+[5.976433] (-) TimerEvent: {}
+[6.077107] (-) TimerEvent: {}
+[6.177726] (-) TimerEvent: {}
+[6.278342] (-) TimerEvent: {}
+[6.378970] (-) TimerEvent: {}
+[6.479633] (-) TimerEvent: {}
+[6.580513] (-) TimerEvent: {}
+[6.683284] (-) TimerEvent: {}
+[6.784479] (-) TimerEvent: {}
+[6.888114] (-) TimerEvent: {}
+[6.988769] (-) TimerEvent: {}
+[7.089441] (-) TimerEvent: {}
+[7.190187] (-) TimerEvent: {}
+[7.291936] (-) TimerEvent: {}
+[7.392842] (-) TimerEvent: {}
+[7.493735] (-) TimerEvent: {}
+[7.594377] (-) TimerEvent: {}
+[7.695022] (-) TimerEvent: {}
+[7.795701] (-) TimerEvent: {}
+[7.896868] (-) TimerEvent: {}
+[7.997543] (-) TimerEvent: {}
+[8.098192] (-) TimerEvent: {}
+[8.198824] (-) TimerEvent: {}
+[8.299471] (-) TimerEvent: {}
+[8.400518] (-) TimerEvent: {}
+[8.501596] (-) TimerEvent: {}
+[8.602717] (-) TimerEvent: {}
+[8.703849] (-) TimerEvent: {}
+[8.804777] (-) TimerEvent: {}
+[8.884186] (pure_pursuit) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1\n'}
+[8.885321] (pure_pursuit) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pure_pursuit_node.dir/all] Error 2\n'}
+[8.886233] (pure_pursuit) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.894214] (pure_pursuit) CommandEnded: {'returncode': 2}
+[8.904926] (-) TimerEvent: {}
+[8.990268] (pure_pursuit) JobEnded: {'identifier': 'pure_pursuit', 'rc': 2}
+[9.001646] (-) EventReactorShutdown: {}

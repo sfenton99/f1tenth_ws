@@ -1,0 +1,45 @@
+[1.458s] Invoking command in '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop': AMENT_PREFIX_PATH=/home/super/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/super/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/super/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/super/f1tenth_ws/build/joy_teleop/prefix_override:/home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/joy_teleop build --build-base /home/super/f1tenth_ws/build/joy_teleop/build install --record /home/super/f1tenth_ws/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data
+[1.944s] running egg_info
+[1.946s] creating ../../../../build/joy_teleop/joy_teleop.egg-info
+[1.946s] writing ../../../../build/joy_teleop/joy_teleop.egg-info/PKG-INFO
+[1.946s] writing dependency_links to ../../../../build/joy_teleop/joy_teleop.egg-info/dependency_links.txt
+[1.949s] writing entry points to ../../../../build/joy_teleop/joy_teleop.egg-info/entry_points.txt
+[1.949s] writing requirements to ../../../../build/joy_teleop/joy_teleop.egg-info/requires.txt
+[1.949s] writing top-level names to ../../../../build/joy_teleop/joy_teleop.egg-info/top_level.txt
+[1.951s] writing manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[2.017s] reading manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[2.019s] writing manifest file '../../../../build/joy_teleop/joy_teleop.egg-info/SOURCES.txt'
+[2.019s] running build
+[2.019s] running build_py
+[2.019s] creating /home/super/f1tenth_ws/build/joy_teleop/build
+[2.020s] creating /home/super/f1tenth_ws/build/joy_teleop/build/lib
+[2.020s] creating /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[2.021s] copying joy_teleop/joy_teleop.py -> /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[2.021s] copying joy_teleop/__init__.py -> /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[2.021s] copying joy_teleop/incrementer_server.py -> /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop
+[2.021s] running install
+[2.024s] running install_lib
+[2.025s] creating /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[2.026s] copying /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop/joy_teleop.py -> /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[2.026s] copying /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop/__init__.py -> /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[2.026s] copying /home/super/f1tenth_ws/build/joy_teleop/build/lib/joy_teleop/incrementer_server.py -> /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop
+[2.027s] byte-compiling /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/joy_teleop.py to joy_teleop.cpython-38.pyc
+[2.040s] byte-compiling /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/__init__.py to __init__.cpython-38.pyc
+[2.041s] byte-compiling /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop/incrementer_server.py to incrementer_server.cpython-38.pyc
+[2.043s] running install_data
+[2.043s] copying package.xml -> /home/super/f1tenth_ws/install/joy_teleop/share/joy_teleop
+[2.043s] creating /home/super/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[2.043s] copying config/joy_teleop_example.yaml -> /home/super/f1tenth_ws/install/joy_teleop/share/joy_teleop/config
+[2.043s] creating /home/super/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[2.043s] copying launch/example.launch.py -> /home/super/f1tenth_ws/install/joy_teleop/share/joy_teleop/launch
+[2.044s] creating /home/super/f1tenth_ws/install/joy_teleop/share/ament_index
+[2.044s] creating /home/super/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index
+[2.044s] creating /home/super/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[2.044s] copying resource/joy_teleop -> /home/super/f1tenth_ws/install/joy_teleop/share/ament_index/resource_index/packages
+[2.044s] running install_egg_info
+[2.044s] Copying ../../../../build/joy_teleop/joy_teleop.egg-info to /home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages/joy_teleop-0.3.0-py3.8.egg-info
+[2.044s] running install_scripts
+[2.086s] Installing incrementer_server script to /home/super/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[2.086s] Installing joy_teleop script to /home/super/f1tenth_ws/install/joy_teleop/lib/joy_teleop
+[2.087s] writing list of installed files to '/home/super/f1tenth_ws/build/joy_teleop/install.log'
+[2.174s] Invoked command in '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/joy_teleop' returned '0': AMENT_PREFIX_PATH=/home/super/f1tenth_ws/install/teleop_tools_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/super/f1tenth_ws/install/teleop_tools_msgs LD_LIBRARY_PATH=/home/super/f1tenth_ws/install/teleop_tools_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/super/f1tenth_ws/build/joy_teleop/prefix_override:/home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../../build/joy_teleop build --build-base /home/super/f1tenth_ws/build/joy_teleop/build install --record /home/super/f1tenth_ws/build/joy_teleop/install.log --install-scripts $base/lib/joy_teleop --single-version-externally-managed install_data

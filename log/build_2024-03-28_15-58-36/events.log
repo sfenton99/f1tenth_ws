@@ -1,0 +1,206 @@
+[0.000000] (-) TimerEvent: {}
+[0.001528] (-) JobUnselected: {'identifier': 'ackermann_mux'}
+[0.002027] (-) JobUnselected: {'identifier': 'f1tenth_stack'}
+[0.002098] (-) JobUnselected: {'identifier': 'joy_teleop'}
+[0.002148] (-) JobUnselected: {'identifier': 'key_teleop'}
+[0.002191] (-) JobUnselected: {'identifier': 'mouse_teleop'}
+[0.002231] (-) JobUnselected: {'identifier': 'particle_filter'}
+[0.002271] (-) JobUnselected: {'identifier': 'teleop_tools'}
+[0.002309] (-) JobUnselected: {'identifier': 'teleop_tools_msgs'}
+[0.002347] (-) JobUnselected: {'identifier': 'vesc'}
+[0.002383] (-) JobUnselected: {'identifier': 'vesc_ackermann'}
+[0.002421] (-) JobUnselected: {'identifier': 'vesc_driver'}
+[0.002456] (-) JobUnselected: {'identifier': 'vesc_msgs'}
+[0.002503] (pure_pursuit) JobQueued: {'identifier': 'pure_pursuit', 'dependencies': OrderedDict()}
+[0.002554] (pure_pursuit) JobStarted: {'identifier': 'pure_pursuit'}
+[0.099017] (-) TimerEvent: {}
+[0.185010] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'cmake'}
+[0.185320] (pure_pursuit) JobProgress: {'identifier': 'pure_pursuit', 'progress': 'build'}
+[0.188170] (pure_pursuit) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/super/f1tenth_ws/build/pure_pursuit', '--', '-j6', '-l6'], 'cwd': '/home/super/f1tenth_ws/build/pure_pursuit', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'super'), ('SSH_AGENT_PID', '4597'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/super/f1tenth_ws/install/vesc_driver/lib:/home/super/f1tenth_ws/install/vesc_ackermann/lib:/home/super/f1tenth_ws/install/vesc_msgs/lib:/home/super/f1tenth_ws/install/teleop_tools_msgs/lib:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/aarch64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/super'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '3215'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '6350'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/super/f1tenth_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'super'), ('JOURNAL_STREAM', '8:65460'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'super'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/super-desktop:@/tmp/.ICE-unix/4635,unix/super-desktop:/tmp/.ICE-unix/4635'), ('INVOCATION_ID', '4941b09657ec443dadd2ae7debafcddb'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/vesc:/home/super/f1tenth_ws/install/vesc_driver:/home/super/f1tenth_ws/install/vesc_ackermann:/home/super/f1tenth_ws/install/vesc_msgs:/home/super/f1tenth_ws/install/teleop_tools:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/teleop_tools_msgs:/home/super/f1tenth_ws/install/pure_pursuit:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/home/super/f1tenth_ws/install/ackermann_mux:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:3b436441-aa99-41c4-8897-d83fa6a5d653'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/super/f1tenth_ws/build/pure_pursuit'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/super/f1tenth_ws/install/f1tenth_stack/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/vesc_msgs/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/joy_teleop/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/teleop_tools_msgs/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/pure_pursuit/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/particle_filter/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:/home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/super/f1tenth_ws/install/vesc:/home/super/f1tenth_ws/install/vesc_driver:/home/super/f1tenth_ws/install/vesc_ackermann:/home/super/f1tenth_ws/install/vesc_msgs:/home/super/f1tenth_ws/install/teleop_tools:/home/super/f1tenth_ws/install/teleop_tools_msgs:/home/super/f1tenth_ws/install/pure_pursuit:/home/super/f1tenth_ws/install/ackermann_mux:/home/super/f1tenth_ws/install/f1tenth_stack:/home/super/f1tenth_ws/install/joy_teleop:/home/super/f1tenth_ws/install/particle_filter:/home/super/f1tenth_ws/install/mouse_teleop:/home/super/f1tenth_ws/install/key_teleop:/opt/ros/foxy')]), 'shell': False}
+[0.201468] (-) TimerEvent: {}
+[0.304964] (-) TimerEvent: {}
+[0.333534] (pure_pursuit) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target pure_pursuit_node\x1b[0m\n'}
+[0.405122] (-) TimerEvent: {}
+[0.505762] (-) TimerEvent: {}
+[0.532249] (pure_pursuit) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o\x1b[0m\n'}
+[0.605931] (-) TimerEvent: {}
+[0.706560] (-) TimerEvent: {}
+[0.807235] (-) TimerEvent: {}
+[0.907905] (-) TimerEvent: {}
+[1.008567] (-) TimerEvent: {}
+[1.109233] (-) TimerEvent: {}
+[1.210111] (-) TimerEvent: {}
+[1.310769] (-) TimerEvent: {}
+[1.411433] (-) TimerEvent: {}
+[1.512147] (-) TimerEvent: {}
+[1.612825] (-) TimerEvent: {}
+[1.716539] (-) TimerEvent: {}
+[1.817240] (-) TimerEvent: {}
+[1.917875] (-) TimerEvent: {}
+[2.018583] (-) TimerEvent: {}
+[2.119304] (-) TimerEvent: {}
+[2.220004] (-) TimerEvent: {}
+[2.320723] (-) TimerEvent: {}
+[2.421407] (-) TimerEvent: {}
+[2.522363] (-) TimerEvent: {}
+[2.623010] (-) TimerEvent: {}
+[2.723700] (-) TimerEvent: {}
+[2.824546] (-) TimerEvent: {}
+[2.925368] (-) TimerEvent: {}
+[3.026120] (-) TimerEvent: {}
+[3.128815] (-) TimerEvent: {}
+[3.231143] (-) TimerEvent: {}
+[3.331833] (-) TimerEvent: {}
+[3.432498] (-) TimerEvent: {}
+[3.533178] (-) TimerEvent: {}
+[3.633865] (-) TimerEvent: {}
+[3.734527] (-) TimerEvent: {}
+[3.835176] (-) TimerEvent: {}
+[3.903673] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:219:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr\x1b[m\x1b[K\xe2\x80\x99 is deprecated [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[3.904282] (pure_pursuit) StderrLine: {'line': b'  219 | gs::msg::PoseStamped::ConstPtr pose_msg\x1b[01;35m\x1b[K)\x1b[m\x1b[K\n'}
+[3.904469] (pure_pursuit) StderrLine: {'line': b'      |                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[3.904626] (pure_pursuit) StderrLine: {'line': b'\n'}
+[3.904774] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7\x1b[m\x1b[K,\n'}
+[3.904918] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:12\x1b[m\x1b[K:\n'}
+[3.905067] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:114:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[3.905219] (pure_pursuit) StderrLine: {'line': b'  114 |     \x1b[01;36m\x1b[KConstPtr\x1b[m\x1b[K;\n'}
+[3.905354] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.935339] (-) TimerEvent: {}
+[3.985132] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> > PurePursuit::select_goal(geometry_msgs::msg::Pose)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.986238] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:168:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator-\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[3.986460] (pure_pursuit) StderrLine: {'line': b'  168 |             if (i == \x1b[32m\x1b[Kx_traj\x1b[m\x1b[K \x1b[01;31m\x1b[K-\x1b[m\x1b[K \x1b[34m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.986633] (pure_pursuit) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K~~~~~~\x1b[m\x1b[K \x1b[01;31m\x1b[K^\x1b[m\x1b[K \x1b[34m\x1b[K~\x1b[m\x1b[K\n'}
+[3.986792] (pure_pursuit) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K|\x1b[m\x1b[K        \x1b[34m\x1b[K|\x1b[m\x1b[K\n'}
+[3.986939] (pure_pursuit) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K|\x1b[m\x1b[K        \x1b[34m\x1b[Kint\x1b[m\x1b[K\n'}
+[3.987078] (pure_pursuit) StderrLine: {'line': b'      |                      \x1b[32m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\n'}
+[3.987214] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[3.987352] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/char_traits.h:39\x1b[m\x1b[K,\n'}
+[3.987482] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ios:40\x1b[m\x1b[K,\n'}
+[3.987611] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/istream:38\x1b[m\x1b[K,\n'}
+[3.987825] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/sstream:38\x1b[m\x1b[K,\n'}
+[3.987973] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.988162] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:415:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.988316] (pure_pursuit) StderrLine: {'line': b'  415 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const reverse_iterator<_IteratorL>& __x,\n'}
+[3.988459] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.988591] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:415:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.988726] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:168:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::reverse_iterator<_Iterator>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.988864] (pure_pursuit) StderrLine: {'line': b'  168 |             if (i == x_traj - \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.988998] (pure_pursuit) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.989847] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[3.990040] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/char_traits.h:39\x1b[m\x1b[K,\n'}
+[3.991036] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ios:40\x1b[m\x1b[K,\n'}
+[3.991212] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/istream:38\x1b[m\x1b[K,\n'}
+[3.991355] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/sstream:38\x1b[m\x1b[K,\n'}
+[3.991492] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.991632] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.991818] (pure_pursuit) StderrLine: {'line': b' 1209 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const move_iterator<_IteratorL>& __x,\n'}
+[3.991995] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.992133] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.995667] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:168:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst std::move_iterator<_IteratorL>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.996284] (pure_pursuit) StderrLine: {'line': b'  168 |             if (i == x_traj - \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.996660] (pure_pursuit) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.996831] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/vector:68\x1b[m\x1b[K,\n'}
+[3.996975] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:4\x1b[m\x1b[K:\n'}
+[3.997112] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:214:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.997256] (pure_pursuit) StderrLine: {'line': b'  214 |   \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)\n'}
+[3.997388] (pure_pursuit) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.997528] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_bvector.h:214:39:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::_Bit_iterator_base&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.997669] (pure_pursuit) StderrLine: {'line': b'  214 |   operator-(\x1b[01;36m\x1b[Kconst _Bit_iterator_base& __x\x1b[m\x1b[K, const _Bit_iterator_base& __y)\n'}
+[3.997801] (pure_pursuit) StderrLine: {'line': b'      |             \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.997931] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[3.998064] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/char_traits.h:39\x1b[m\x1b[K,\n'}
+[3.998193] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ios:40\x1b[m\x1b[K,\n'}
+[3.998320] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/istream:38\x1b[m\x1b[K,\n'}
+[3.998448] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/sstream:38\x1b[m\x1b[K,\n'}
+[3.998576] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.998704] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:974:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.998844] (pure_pursuit) StderrLine: {'line': b'  974 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const __normal_iterator<_IteratorL, _Container>& __lhs,\n'}
+[3.998977] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.999105] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:974:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.999237] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:168:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst __gnu_cxx::__normal_iterator<_IteratorL, _Container>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.999374] (pure_pursuit) StderrLine: {'line': b'  168 |             if (i == x_traj - \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[3.999531] (pure_pursuit) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.999658] (pure_pursuit) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/bits/stl_algobase.h:67\x1b[m\x1b[K,\n'}
+[3.999842] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/bits/char_traits.h:39\x1b[m\x1b[K,\n'}
+[3.999984] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ios:40\x1b[m\x1b[K,\n'}
+[4.000115] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/istream:38\x1b[m\x1b[K,\n'}
+[4.000245] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/sstream:38\x1b[m\x1b[K,\n'}
+[4.000377] (pure_pursuit) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:1\x1b[m\x1b[K:\n'}
+[4.000511] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:986:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.000648] (pure_pursuit) StderrLine: {'line': b'  986 |     \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K-(const __normal_iterator<_Iterator, _Container>& __lhs,\n'}
+[4.000777] (pure_pursuit) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.000904] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_iterator.h:986:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.001058] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:168:31:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double, std::allocator<double> >\x1b[m\x1b[K\xe2\x80\x99 is not derived from \xe2\x80\x98\x1b[01m\x1b[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.001208] (pure_pursuit) StderrLine: {'line': b'  168 |             if (i == x_traj - \x1b[01;36m\x1b[K1\x1b[m\x1b[K){\n'}
+[4.001339] (pure_pursuit) StderrLine: {'line': b'      |                               \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.001468] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:169:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.001601] (pure_pursuit) StderrLine: {'line': b'  169 |                 i = 0\n'}
+[4.001727] (pure_pursuit) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.001853] (pure_pursuit) StderrLine: {'line': b'      |                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.001978] (pure_pursuit) StderrLine: {'line': b'  170 |             \x1b[32m\x1b[K}\x1b[m\x1b[K\n'}
+[4.002104] (pure_pursuit) StderrLine: {'line': b'      |             \x1b[32m\x1b[K~\x1b[m\x1b[K         \n'}
+[4.025336] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid PurePursuit::pose_callback(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::ConstPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.025866] (pure_pursuit) StderrLine: {'line': b'\x1b[01m\x1b[K/home/super/f1tenth_ws/src/PurePursuit/src/pure_pursuit/src/pure_pursuit_node.cpp:232:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdx_trans\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K-Wunused-variable\x1b[m\x1b[K]\n'}
+[4.026082] (pure_pursuit) StderrLine: {'line': b'  232 |         double \x1b[01;35m\x1b[Kdx_trans\x1b[m\x1b[K = dx*cos(yaw) + dy*sin(yaw);\n'}
+[4.026242] (pure_pursuit) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.035478] (-) TimerEvent: {}
+[4.136134] (-) TimerEvent: {}
+[4.236788] (-) TimerEvent: {}
+[4.338832] (-) TimerEvent: {}
+[4.439559] (-) TimerEvent: {}
+[4.540340] (-) TimerEvent: {}
+[4.642472] (-) TimerEvent: {}
+[4.743971] (-) TimerEvent: {}
+[4.845879] (-) TimerEvent: {}
+[4.947205] (-) TimerEvent: {}
+[5.050674] (-) TimerEvent: {}
+[5.151456] (-) TimerEvent: {}
+[5.405476] (-) TimerEvent: {}
+[5.507257] (-) TimerEvent: {}
+[5.607971] (-) TimerEvent: {}
+[5.708692] (-) TimerEvent: {}
+[5.809322] (-) TimerEvent: {}
+[5.909967] (-) TimerEvent: {}
+[6.010649] (-) TimerEvent: {}
+[6.111321] (-) TimerEvent: {}
+[6.212015] (-) TimerEvent: {}
+[6.312655] (-) TimerEvent: {}
+[6.413308] (-) TimerEvent: {}
+[6.513974] (-) TimerEvent: {}
+[6.614656] (-) TimerEvent: {}
+[6.715306] (-) TimerEvent: {}
+[6.816289] (-) TimerEvent: {}
+[6.916952] (-) TimerEvent: {}
+[7.017649] (-) TimerEvent: {}
+[7.118330] (-) TimerEvent: {}
+[7.219575] (-) TimerEvent: {}
+[7.320616] (-) TimerEvent: {}
+[7.421361] (-) TimerEvent: {}
+[7.522216] (-) TimerEvent: {}
+[7.622842] (-) TimerEvent: {}
+[7.723487] (-) TimerEvent: {}
+[7.824129] (-) TimerEvent: {}
+[7.924758] (-) TimerEvent: {}
+[8.025375] (-) TimerEvent: {}
+[8.126018] (-) TimerEvent: {}
+[8.226668] (-) TimerEvent: {}
+[8.327286] (-) TimerEvent: {}
+[8.427970] (-) TimerEvent: {}
+[8.528925] (-) TimerEvent: {}
+[8.629589] (-) TimerEvent: {}
+[8.732544] (-) TimerEvent: {}
+[8.833178] (-) TimerEvent: {}
+[8.933820] (-) TimerEvent: {}
+[9.034476] (-) TimerEvent: {}
+[9.135232] (-) TimerEvent: {}
+[9.236029] (-) TimerEvent: {}
+[9.336698] (-) TimerEvent: {}
+[9.437410] (-) TimerEvent: {}
+[9.538070] (-) TimerEvent: {}
+[9.580933] (pure_pursuit) StderrLine: {'line': b'make[2]: *** [CMakeFiles/pure_pursuit_node.dir/build.make:63: CMakeFiles/pure_pursuit_node.dir/src/pure_pursuit_node.cpp.o] Error 1\n'}
+[9.582015] (pure_pursuit) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/pure_pursuit_node.dir/all] Error 2\n'}
+[9.582468] (pure_pursuit) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[9.590564] (pure_pursuit) CommandEnded: {'returncode': 2}
+[9.638316] (-) TimerEvent: {}
+[9.700112] (pure_pursuit) JobEnded: {'identifier': 'pure_pursuit', 'rc': 2}
+[9.711788] (-) EventReactorShutdown: {}

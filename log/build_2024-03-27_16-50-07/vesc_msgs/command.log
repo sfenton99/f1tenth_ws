@@ -1,0 +1,1 @@
+Invoking command in '/home/super/f1tenth_ws/build/vesc_msgs': /usr/bin/cmake /home/super/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs -DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/vesc_msgs

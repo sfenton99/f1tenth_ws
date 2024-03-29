@@ -1,0 +1,254 @@
+[0.000000] (-) TimerEvent: {}
+[0.001004] (ackermann_mux) JobQueued: {'identifier': 'ackermann_mux', 'dependencies': OrderedDict()}
+[0.001265] (key_teleop) JobQueued: {'identifier': 'key_teleop', 'dependencies': OrderedDict()}
+[0.001905] (mouse_teleop) JobQueued: {'identifier': 'mouse_teleop', 'dependencies': OrderedDict()}
+[0.002205] (teleop_tools_msgs) JobQueued: {'identifier': 'teleop_tools_msgs', 'dependencies': OrderedDict()}
+[0.002515] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.002615] (joy_teleop) JobQueued: {'identifier': 'joy_teleop', 'dependencies': OrderedDict([('teleop_tools_msgs', '/home/super/f1tenth_ws/install/teleop_tools_msgs')])}
+[0.002701] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict([('vesc_msgs', '/home/super/f1tenth_ws/install/vesc_msgs')])}
+[0.002775] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict([('vesc_msgs', '/home/super/f1tenth_ws/install/vesc_msgs')])}
+[0.002847] (teleop_tools) JobQueued: {'identifier': 'teleop_tools', 'dependencies': OrderedDict([('key_teleop', '/home/super/f1tenth_ws/install/key_teleop'), ('teleop_tools_msgs', '/home/super/f1tenth_ws/install/teleop_tools_msgs'), ('joy_teleop', '/home/super/f1tenth_ws/install/joy_teleop')])}
+[0.002917] (vesc) JobQueued: {'identifier': 'vesc', 'dependencies': OrderedDict([('vesc_msgs', '/home/super/f1tenth_ws/install/vesc_msgs'), ('vesc_ackermann', '/home/super/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/super/f1tenth_ws/install/vesc_driver')])}
+[0.002992] (f1tenth_stack) JobQueued: {'identifier': 'f1tenth_stack', 'dependencies': OrderedDict([('ackermann_mux', '/home/super/f1tenth_ws/install/ackermann_mux'), ('teleop_tools_msgs', '/home/super/f1tenth_ws/install/teleop_tools_msgs'), ('vesc_msgs', '/home/super/f1tenth_ws/install/vesc_msgs'), ('joy_teleop', '/home/super/f1tenth_ws/install/joy_teleop'), ('vesc_ackermann', '/home/super/f1tenth_ws/install/vesc_ackermann'), ('vesc_driver', '/home/super/f1tenth_ws/install/vesc_driver'), ('vesc', '/home/super/f1tenth_ws/install/vesc')])}
+[0.003075] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.019098] (teleop_tools_msgs) JobStarted: {'identifier': 'teleop_tools_msgs'}
+[0.031371] (ackermann_mux) JobStarted: {'identifier': 'ackermann_mux'}
+[0.056743] (key_teleop) JobStarted: {'identifier': 'key_teleop'}
+[0.073173] (mouse_teleop) JobStarted: {'identifier': 'mouse_teleop'}
+[0.099551] (-) TimerEvent: {}
+[0.200408] (-) TimerEvent: {}
+[0.301198] (-) TimerEvent: {}
+[0.402024] (-) TimerEvent: {}
+[0.502856] (-) TimerEvent: {}
+[0.604016] (-) TimerEvent: {}
+[0.605584] (teleop_tools_msgs) JobProgress: {'identifier': 'teleop_tools_msgs', 'progress': 'cmake'}
+[0.606402] (teleop_tools_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/teleop_tools_msgs', '-DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/teleop_tools_msgs'], 'cwd': '/home/super/f1tenth_ws/build/teleop_tools_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'super'), ('SSH_AGENT_PID', '3433'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/super'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/super/f1tenth_ws/src/f1tenth_system'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3253'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3855'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'super'), ('JOURNAL_STREAM', '8:60073'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'super'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/super-desktop:@/tmp/.ICE-unix/3468,unix/super-desktop:/tmp/.ICE-unix/3468'), ('INVOCATION_ID', '5d8b8518f9f6463e99b6e0ed4fcb15f7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68a3c674b2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/super/f1tenth_ws/build/teleop_tools_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.704620] (-) TimerEvent: {}
+[0.777077] (ackermann_mux) JobProgress: {'identifier': 'ackermann_mux', 'progress': 'cmake'}
+[0.777735] (ackermann_mux) Command: {'cmd': ['/usr/bin/cmake', '/home/super/f1tenth_ws/src/f1tenth_system/ackermann_mux', '-DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/ackermann_mux'], 'cwd': '/home/super/f1tenth_ws/build/ackermann_mux', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'super'), ('SSH_AGENT_PID', '3433'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/super'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/super/f1tenth_ws/src/f1tenth_system'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3253'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3855'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'super'), ('JOURNAL_STREAM', '8:60073'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'super'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/super-desktop:@/tmp/.ICE-unix/3468,unix/super-desktop:/tmp/.ICE-unix/3468'), ('INVOCATION_ID', '5d8b8518f9f6463e99b6e0ed4fcb15f7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68a3c674b2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/super/f1tenth_ws/build/ackermann_mux'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.785997] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.786493] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/super/f1tenth_ws/src/f1tenth_system/vesc/vesc_msgs', '-DCMAKE_INSTALL_PREFIX=/home/super/f1tenth_ws/install/vesc_msgs'], 'cwd': '/home/super/f1tenth_ws/build/vesc_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'super'), ('SSH_AGENT_PID', '3433'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('HOME', '/home/super'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/super/f1tenth_ws/src/f1tenth_system'), ('TERM_PROGRAM_VERSION', '1.87.2'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '3253'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3855'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'super'), ('JOURNAL_STREAM', '8:60073'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'super'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/super-desktop:@/tmp/.ICE-unix/3468,unix/super-desktop:/tmp/.ICE-unix/3468'), ('INVOCATION_ID', '5d8b8518f9f6463e99b6e0ed4fcb15f7'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-68a3c674b2.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/super/f1tenth_ws/build/vesc_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('COLCON', '1')]), 'shell': False}
+[0.804672] (-) TimerEvent: {}
+[0.905396] (-) TimerEvent: {}
+[1.006053] (-) TimerEvent: {}
+[1.106858] (-) TimerEvent: {}
+[1.207730] (-) TimerEvent: {}
+[1.308643] (-) TimerEvent: {}
+[1.384931] (teleop_tools_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.385788] (ackermann_mux) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.386267] (vesc_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[1.408701] (-) TimerEvent: {}
+[1.509270] (-) TimerEvent: {}
+[1.609906] (-) TimerEvent: {}
+[1.710519] (-) TimerEvent: {}
+[1.811143] (-) TimerEvent: {}
+[1.911914] (-) TimerEvent: {}
+[2.012555] (-) TimerEvent: {}
+[2.113220] (-) TimerEvent: {}
+[2.129977] (vesc_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.130743] (ackermann_mux) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.131183] (teleop_tools_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[2.150151] (vesc_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.150733] (teleop_tools_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.150937] (ackermann_mux) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.213375] (-) TimerEvent: {}
+[2.314020] (-) TimerEvent: {}
+[2.414737] (-) TimerEvent: {}
+[2.515512] (-) TimerEvent: {}
+[2.606114] (teleop_tools_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.606668] (vesc_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.608996] (ackermann_mux) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[2.615551] (-) TimerEvent: {}
+[2.716046] (-) TimerEvent: {}
+[2.741366] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.741998] (ackermann_mux) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.742196] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.816221] (-) TimerEvent: {}
+[2.917089] (-) TimerEvent: {}
+[3.017804] (-) TimerEvent: {}
+[3.036918] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.067248] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.075357] (ackermann_mux) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.115698] (mouse_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/mouse_teleop', 'build', '--build-base', '/home/super/f1tenth_ws/build/mouse_teleop/build', 'install', '--record', '/home/super/f1tenth_ws/build/mouse_teleop/install.log', '--install-scripts', '$base/lib/mouse_teleop', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/mouse_teleop', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'super', 'SSH_AGENT_PID': '3433', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'HOME': '/home/super', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'OLDPWD': '/home/super/f1tenth_ws/src/f1tenth_system', 'TERM_PROGRAM_VERSION': '1.87.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '3253', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3855', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'super', 'JOURNAL_STREAM': '8:60073', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'super', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/super-desktop:@/tmp/.ICE-unix/3468,unix/super-desktop:/tmp/.ICE-unix/3468', 'INVOCATION_ID': '5d8b8518f9f6463e99b6e0ed4fcb15f7', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-68a3c674b2.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/super/f1tenth_ws/build/mouse_teleop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/super/f1tenth_ws/build/mouse_teleop/prefix_override:/home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages:'}, 'shell': False}
+[3.122870] (-) TimerEvent: {}
+[3.135953] (key_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/key_teleop', 'build', '--build-base', '/home/super/f1tenth_ws/build/key_teleop/build', 'install', '--record', '/home/super/f1tenth_ws/build/key_teleop/install.log', '--install-scripts', '$base/lib/key_teleop', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/super/f1tenth_ws/src/f1tenth_system/teleop_tools/key_teleop', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'super', 'SSH_AGENT_PID': '3433', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'HOME': '/home/super', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'OLDPWD': '/home/super/f1tenth_ws/src/f1tenth_system', 'TERM_PROGRAM_VERSION': '1.87.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '3253', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3855', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'super', 'JOURNAL_STREAM': '8:60073', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'super', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINDOWPATH': '2', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/super-desktop:@/tmp/.ICE-unix/3468,unix/super-desktop:/tmp/.ICE-unix/3468', 'INVOCATION_ID': '5d8b8518f9f6463e99b6e0ed4fcb15f7', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-68a3c674b2.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/super/f1tenth_ws/build/key_teleop', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'COLCON': '1', 'PYTHONPATH': '/home/super/f1tenth_ws/build/key_teleop/prefix_override:/home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages:'}, 'shell': False}
+[3.223056] (-) TimerEvent: {}
+[3.230965] (ackermann_mux) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.231570] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.231796] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.232844] (ackermann_mux) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.236488] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.236895] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.241271] (teleop_tools_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.242958] (vesc_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.247492] (ackermann_mux) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[3.323401] (-) TimerEvent: {}
+[3.427879] (-) TimerEvent: {}
+[3.510792] (mouse_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[3.512070] (mouse_teleop) StdoutLine: {'line': b'creating ../../../../build/mouse_teleop/mouse_teleop.egg-info\n'}
+[3.512660] (mouse_teleop) StdoutLine: {'line': b'writing ../../../../build/mouse_teleop/mouse_teleop.egg-info/PKG-INFO\n'}
+[3.513342] (mouse_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/mouse_teleop/mouse_teleop.egg-info/dependency_links.txt\n'}
+[3.513736] (mouse_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/mouse_teleop/mouse_teleop.egg-info/entry_points.txt\n'}
+[3.514087] (mouse_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/mouse_teleop/mouse_teleop.egg-info/requires.txt\n'}
+[3.514388] (mouse_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/mouse_teleop/mouse_teleop.egg-info/top_level.txt\n'}
+[3.518070] (mouse_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'\n"}
+[3.527354] (-) TimerEvent: {}
+[3.550465] (key_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[3.552218] (key_teleop) StdoutLine: {'line': b'creating ../../../../build/key_teleop/key_teleop.egg-info\n'}
+[3.552912] (key_teleop) StdoutLine: {'line': b'writing ../../../../build/key_teleop/key_teleop.egg-info/PKG-INFO\n'}
+[3.553803] (teleop_tools_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.554063] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.554225] (key_teleop) StdoutLine: {'line': b'writing dependency_links to ../../../../build/key_teleop/key_teleop.egg-info/dependency_links.txt\n'}
+[3.554380] (key_teleop) StdoutLine: {'line': b'writing entry points to ../../../../build/key_teleop/key_teleop.egg-info/entry_points.txt\n'}
+[3.554607] (key_teleop) StdoutLine: {'line': b'writing requirements to ../../../../build/key_teleop/key_teleop.egg-info/requires.txt\n'}
+[3.554747] (key_teleop) StdoutLine: {'line': b'writing top-level names to ../../../../build/key_teleop/key_teleop.egg-info/top_level.txt\n'}
+[3.557126] (ackermann_mux) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.558322] (key_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'\n"}
+[3.560860] (ackermann_mux) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.561234] (vesc_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[3.562318] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.584242] (mouse_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'\n"}
+[3.585956] (mouse_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/mouse_teleop/mouse_teleop.egg-info/SOURCES.txt'\n"}
+[3.586732] (mouse_teleop) StdoutLine: {'line': b'running build\n'}
+[3.588320] (mouse_teleop) StdoutLine: {'line': b'running build_py\n'}
+[3.589844] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/build/mouse_teleop/build\n'}
+[3.590023] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/build/mouse_teleop/build/lib\n'}
+[3.590170] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop\n'}
+[3.590308] (mouse_teleop) StdoutLine: {'line': b'copying mouse_teleop/__init__.py -> /home/super/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop\n'}
+[3.590444] (mouse_teleop) StdoutLine: {'line': b'copying mouse_teleop/mouse_teleop.py -> /home/super/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop\n'}
+[3.590572] (mouse_teleop) StdoutLine: {'line': b'running install\n'}
+[3.593226] (mouse_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[3.595692] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop\n'}
+[3.595976] (mouse_teleop) StdoutLine: {'line': b'copying /home/super/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop/__init__.py -> /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop\n'}
+[3.596157] (mouse_teleop) StdoutLine: {'line': b'copying /home/super/f1tenth_ws/build/mouse_teleop/build/lib/mouse_teleop/mouse_teleop.py -> /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop\n'}
+[3.597094] (mouse_teleop) StdoutLine: {'line': b'byte-compiling /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop/__init__.py to __init__.cpython-38.pyc\n'}
+[3.599824] (mouse_teleop) StdoutLine: {'line': b'byte-compiling /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop/mouse_teleop.py to mouse_teleop.cpython-38.pyc\n'}
+[3.602913] (mouse_teleop) StdoutLine: {'line': b'running install_data\n'}
+[3.603311] (mouse_teleop) StdoutLine: {'line': b'copying package.xml -> /home/super/f1tenth_ws/install/mouse_teleop/share/mouse_teleop\n'}
+[3.603676] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/config\n'}
+[3.603925] (mouse_teleop) StdoutLine: {'line': b'copying config/mouse_teleop.yaml -> /home/super/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/config\n'}
+[3.604195] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/launch\n'}
+[3.604412] (mouse_teleop) StdoutLine: {'line': b'copying launch/mouse_teleop.launch.py -> /home/super/f1tenth_ws/install/mouse_teleop/share/mouse_teleop/launch\n'}
+[3.604816] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/mouse_teleop/share/ament_index\n'}
+[3.745697] (-) TimerEvent: {}
+[3.747008] (key_teleop) StdoutLine: {'line': b"reading manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'\n"}
+[3.747468] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/mouse_teleop/share/ament_index/resource_index\n'}
+[3.747699] (mouse_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/mouse_teleop/share/ament_index/resource_index/packages\n'}
+[3.747886] (mouse_teleop) StdoutLine: {'line': b'copying resource/mouse_teleop -> /home/super/f1tenth_ws/install/mouse_teleop/share/ament_index/resource_index/packages\n'}
+[3.748063] (mouse_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.748229] (mouse_teleop) StdoutLine: {'line': b'Copying ../../../../build/mouse_teleop/mouse_teleop.egg-info to /home/super/f1tenth_ws/install/mouse_teleop/lib/python3.8/site-packages/mouse_teleop-0.3.0-py3.8.egg-info\n'}
+[3.748696] (key_teleop) StdoutLine: {'line': b"writing manifest file '../../../../build/key_teleop/key_teleop.egg-info/SOURCES.txt'\n"}
+[3.748907] (key_teleop) StdoutLine: {'line': b'running build\n'}
+[3.749073] (key_teleop) StdoutLine: {'line': b'running build_py\n'}
+[3.749228] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/build/key_teleop/build\n'}
+[3.749381] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/build/key_teleop/build/lib\n'}
+[3.749532] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/build/key_teleop/build/lib/key_teleop\n'}
+[3.749680] (mouse_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[3.749832] (key_teleop) StdoutLine: {'line': b'copying key_teleop/__init__.py -> /home/super/f1tenth_ws/build/key_teleop/build/lib/key_teleop\n'}
+[3.750078] (key_teleop) StdoutLine: {'line': b'copying key_teleop/key_teleop.py -> /home/super/f1tenth_ws/build/key_teleop/build/lib/key_teleop\n'}
+[3.750252] (key_teleop) StdoutLine: {'line': b'running install\n'}
+[3.765420] (key_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[3.765917] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop\n'}
+[3.766093] (key_teleop) StdoutLine: {'line': b'copying /home/super/f1tenth_ws/build/key_teleop/build/lib/key_teleop/__init__.py -> /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop\n'}
+[3.766248] (key_teleop) StdoutLine: {'line': b'copying /home/super/f1tenth_ws/build/key_teleop/build/lib/key_teleop/key_teleop.py -> /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop\n'}
+[3.766392] (key_teleop) StdoutLine: {'line': b'byte-compiling /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop/__init__.py to __init__.cpython-38.pyc\n'}
+[3.766528] (key_teleop) StdoutLine: {'line': b'byte-compiling /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop/key_teleop.py to key_teleop.cpython-38.pyc\n'}
+[3.766703] (key_teleop) StdoutLine: {'line': b'running install_data\n'}
+[3.766830] (key_teleop) StdoutLine: {'line': b'copying package.xml -> /home/super/f1tenth_ws/install/key_teleop/share/key_teleop\n'}
+[3.766957] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/key_teleop/share/key_teleop/config\n'}
+[3.767081] (key_teleop) StdoutLine: {'line': b'copying config/key_teleop.yaml -> /home/super/f1tenth_ws/install/key_teleop/share/key_teleop/config\n'}
+[3.767204] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/key_teleop/share/ament_index\n'}
+[3.767325] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/key_teleop/share/ament_index/resource_index\n'}
+[3.767446] (key_teleop) StdoutLine: {'line': b'creating /home/super/f1tenth_ws/install/key_teleop/share/ament_index/resource_index/packages\n'}
+[3.767566] (key_teleop) StdoutLine: {'line': b'copying resource/key_teleop -> /home/super/f1tenth_ws/install/key_teleop/share/ament_index/resource_index/packages\n'}
+[3.767693] (key_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.772927] (key_teleop) StdoutLine: {'line': b'Copying ../../../../build/key_teleop/key_teleop.egg-info to /home/super/f1tenth_ws/install/key_teleop/lib/python3.8/site-packages/key_teleop-0.3.0-py3.8.egg-info\n'}
+[3.773471] (key_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[3.789680] (mouse_teleop) StdoutLine: {'line': b'Installing mouse_teleop script to /home/super/f1tenth_ws/install/mouse_teleop/lib/mouse_teleop\n'}
+[3.790566] (mouse_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/super/f1tenth_ws/build/mouse_teleop/install.log'\n"}
+[3.816436] (key_teleop) StdoutLine: {'line': b'Installing key_teleop script to /home/super/f1tenth_ws/install/key_teleop/lib/key_teleop\n'}
+[3.817697] (key_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/super/f1tenth_ws/build/key_teleop/install.log'\n"}
+[3.845920] (-) TimerEvent: {}
+[3.884861] (mouse_teleop) CommandEnded: {'returncode': 0}
+[3.894507] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.894920] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.895135] (ackermann_mux) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.908952] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.910601] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.910956] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.911737] (teleop_tools_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.914132] (ackermann_mux) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.915212] (ackermann_mux) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.916149] (mouse_teleop) JobEnded: {'identifier': 'mouse_teleop', 'rc': 0}
+[3.918948] (key_teleop) CommandEnded: {'returncode': 0}
+[3.931135] (key_teleop) JobEnded: {'identifier': 'key_teleop', 'rc': 0}
+[3.935156] (ackermann_mux) StderrLine: {'line': b'CMake Error at CMakeLists.txt:13 (find_package):\n'}
+[3.935772] (ackermann_mux) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[3.936166] (ackermann_mux) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[3.936361] (ackermann_mux) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[3.936521] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.936940] (ackermann_mux) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[3.937100] (ackermann_mux) StderrLine: {'line': b'  any of the following names:\n'}
+[3.937234] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.937358] (ackermann_mux) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[3.937481] (ackermann_mux) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[3.937631] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.937752] (ackermann_mux) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[3.937876] (ackermann_mux) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[3.938010] (ackermann_mux) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[3.938135] (ackermann_mux) StderrLine: {'line': b'  has been installed.\n'}
+[3.938255] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.938373] (ackermann_mux) StderrLine: {'line': b'\n'}
+[3.938490] (ackermann_mux) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[3.938646] (ackermann_mux) StdoutLine: {'line': b'See also "/home/super/f1tenth_ws/build/ackermann_mux/CMakeFiles/CMakeOutput.log".\n'}
+[3.944397] (ackermann_mux) CommandEnded: {'returncode': 1}
+[3.945991] (-) TimerEvent: {}
+[3.994022] (ackermann_mux) JobEnded: {'identifier': 'ackermann_mux', 'rc': 1}
+[4.046211] (-) TimerEvent: {}
+[4.074178] (teleop_tools_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:18 (find_package):\n'}
+[4.074737] (teleop_tools_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake.cmake" in CMAKE_MODULE_PATH this project\n'}
+[4.074896] (teleop_tools_msgs) StderrLine: {'line': b'  has asked CMake to find a package configuration file provided by\n'}
+[4.075117] (teleop_tools_msgs) StderrLine: {'line': b'  "ament_cmake", but CMake did not find one.\n'}
+[4.075253] (teleop_tools_msgs) StderrLine: {'line': b'\n'}
+[4.075383] (teleop_tools_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake" with\n'}
+[4.075507] (teleop_tools_msgs) StderrLine: {'line': b'  any of the following names:\n'}
+[4.075627] (teleop_tools_msgs) StderrLine: {'line': b'\n'}
+[4.075742] (teleop_tools_msgs) StderrLine: {'line': b'    ament_cmakeConfig.cmake\n'}
+[4.075860] (teleop_tools_msgs) StderrLine: {'line': b'    ament_cmake-config.cmake\n'}
+[4.075977] (teleop_tools_msgs) StderrLine: {'line': b'\n'}
+[4.076091] (teleop_tools_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake" to CMAKE_PREFIX_PATH or set\n'}
+[4.076206] (teleop_tools_msgs) StderrLine: {'line': b'  "ament_cmake_DIR" to a directory containing one of the above files.  If\n'}
+[4.076321] (teleop_tools_msgs) StderrLine: {'line': b'  "ament_cmake" provides a separate development package or SDK, be sure it\n'}
+[4.076434] (teleop_tools_msgs) StderrLine: {'line': b'  has been installed.\n'}
+[4.076580] (teleop_tools_msgs) StderrLine: {'line': b'\n'}
+[4.076701] (teleop_tools_msgs) StderrLine: {'line': b'\n'}
+[4.076817] (teleop_tools_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.076974] (teleop_tools_msgs) StdoutLine: {'line': b'See also "/home/super/f1tenth_ws/build/teleop_tools_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[4.083210] (teleop_tools_msgs) JobEnded: {'identifier': 'teleop_tools_msgs', 'rc': 'SIGINT'}
+[4.094137] (vesc_msgs) StderrLine: {'line': b'CMake Error at CMakeLists.txt:4 (find_package):\n'}
+[4.094675] (vesc_msgs) StderrLine: {'line': b'  By not providing "Findament_cmake_auto.cmake" in CMAKE_MODULE_PATH this\n'}
+[4.094853] (vesc_msgs) StderrLine: {'line': b'  project has asked CMake to find a package configuration file provided by\n'}
+[4.094994] (vesc_msgs) StderrLine: {'line': b'  "ament_cmake_auto", but CMake did not find one.\n'}
+[4.095127] (vesc_msgs) StderrLine: {'line': b'\n'}
+[4.095407] (vesc_msgs) StderrLine: {'line': b'  Could not find a package configuration file provided by "ament_cmake_auto"\n'}
+[4.095546] (vesc_msgs) StderrLine: {'line': b'  with any of the following names:\n'}
+[4.095672] (vesc_msgs) StderrLine: {'line': b'\n'}
+[4.095792] (vesc_msgs) StderrLine: {'line': b'    ament_cmake_autoConfig.cmake\n'}
+[4.095912] (vesc_msgs) StderrLine: {'line': b'    ament_cmake_auto-config.cmake\n'}
+[4.096027] (vesc_msgs) StderrLine: {'line': b'\n'}
+[4.096140] (vesc_msgs) StderrLine: {'line': b'  Add the installation prefix of "ament_cmake_auto" to CMAKE_PREFIX_PATH or\n'}
+[4.096275] (vesc_msgs) StderrLine: {'line': b'  set "ament_cmake_auto_DIR" to a directory containing one of the above\n'}
+[4.096391] (vesc_msgs) StderrLine: {'line': b'  files.  If "ament_cmake_auto" provides a separate development package or\n'}
+[4.096549] (vesc_msgs) StderrLine: {'line': b'  SDK, be sure it has been installed.\n'}
+[4.096676] (vesc_msgs) StderrLine: {'line': b'\n'}
+[4.096794] (vesc_msgs) StderrLine: {'line': b'\n'}
+[4.096912] (vesc_msgs) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[4.097062] (vesc_msgs) StdoutLine: {'line': b'See also "/home/super/f1tenth_ws/build/vesc_msgs/CMakeFiles/CMakeOutput.log".\n'}
+[4.103083] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 'SIGINT'}
+[4.114666] (joy_teleop) JobSkipped: {'identifier': 'joy_teleop'}
+[4.114915] (vesc_ackermann) JobSkipped: {'identifier': 'vesc_ackermann'}
+[4.115290] (vesc_driver) JobSkipped: {'identifier': 'vesc_driver'}
+[4.115491] (teleop_tools) JobSkipped: {'identifier': 'teleop_tools'}
+[4.115631] (vesc) JobSkipped: {'identifier': 'vesc'}
+[4.115696] (f1tenth_stack) JobSkipped: {'identifier': 'f1tenth_stack'}
+[4.115866] (-) EventReactorShutdown: {}
