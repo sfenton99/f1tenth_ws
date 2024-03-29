@@ -67,6 +67,9 @@ public:
         max_steer = this->get_parameter("max_steer").get_value<double>();
         min_steer = this->get_parameter("min_steer").get_value<double>();
         step_size = this->get_parameter("step_size").get_value<int>();
+
+        // jitter handling
+        first_lap = true;
     
     }
     
@@ -86,6 +89,9 @@ private:
     double max_steer;
     double min_steer;
     int step_size;
+
+    // jitter handling
+    bool first_lap;
 
     //trajectory being followed
     std::vector<double> x_traj;
@@ -189,6 +195,7 @@ private:
             }
             if (i == (x_traj.size() - 1)){
                 i = 0;
+                first_lap = false;
             }
         }
 
@@ -241,15 +248,22 @@ private:
     double set_velocity(const double angle)
     {
         double velocity;
-        if (angle < 10*M_PI/180){
-            velocity = speed_scale * 1.5;
-        }
-        else if (angle < 20*M_PI/180){
-            velocity = speed_scale * 1.0;
+
+        if (first_lap){
+            velocity = 1.0;
         }
         else{
-            velocity = speed_scale * 0.5;
+            if (angle < 10*M_PI/180){
+                velocity = speed_scale * 1.5;
+            }
+            else if (angle < 20*M_PI/180){
+                velocity = speed_scale * 1.0;
+            }
+            else{
+                velocity = speed_scale * 0.5;
+            }
         }
+
         return velocity;
     }
 

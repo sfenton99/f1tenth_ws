@@ -18,10 +18,8 @@ maps/levine.yaml
 maps/localize.yaml
 maps/lockers_good.pgm
 maps/lockers_good.yaml
-maps/race3.pgm
-maps/race3.yaml
-maps/race4.pgm
-maps/race4.yaml
+maps/race.pgm
+maps/race.yaml
 particle_filter/__init__.py
 particle_filter/particle_filter.py
 particle_filter/utils.py
